@@ -8,9 +8,10 @@
 <body>
     <h1>Black Blox</h1>
     {% for objects in post_list %}
-        {{objects.titulo}}
         
-        <hr>
+        <a href = "{% url 'detail' objects.pk %}"> {{objects.titulo}} </a>
+        
+        <br>
     {% endfor %}
 
 </body>
