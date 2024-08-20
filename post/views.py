@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from  .models import Post
 from django.views.generic import ListView, DetailView
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, DeleteView
 
 # Create your views here.
 
@@ -17,3 +17,8 @@ class CreatePageView(CreateView):
     model = Post
     template_name = "create.html"
     fields = ["titulo","descripcion","autor"] 
+
+class DeletePageView(DeleteView):
+    model = Post
+    template_name = "delete.html"
+    
