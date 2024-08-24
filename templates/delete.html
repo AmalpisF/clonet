@@ -8,8 +8,13 @@
 <body>
     <form method = "post">
         {% csrf_token %}
+        <p style="color:red">
+           seguro quieres borrar {{pos.titulo}}
+        </p>
         <input type = "submit" value = "borrar">
     </form>
-    <a href = "{% url 'home' %}"> regresar al home</a>       
+    <br>
+    <a href = "{% url 'home' %}"> regresar al home </a>       
+    <br>
 </body>
 </html>

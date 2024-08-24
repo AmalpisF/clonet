@@ -13,10 +13,13 @@
         {{post.descripcion}}
         <br>
         {{object.autor}}
-    
-    <br>
+        <br>
+        <br>
         <a href = "{% url 'home' %}"> regresar al home</a>
-    <br>
+        <br>
         <a href="{% url 'delete' post.pk %}"> borrar éste post</a>
+        <br>
+        <a href="{% url 'update' post.pk %}"> actualizar éste post</a>
+
 </body>
 </html>

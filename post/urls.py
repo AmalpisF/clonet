@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import HomePageView, DetailPageView, CreatePageView, DeletePageView
+from .views import HomePageView, DetailPageView, CreatePageView, DeletePageView, UpdatePageView
 
 
 urlpatterns = [
@@ -7,4 +7,5 @@ urlpatterns = [
     path("detail/<int:pk>", DetailPageView.as_view(), name = "detail"),
     path("create", CreatePageView.as_view(), name = "create"),
     path("detail/<int:pk>/delete", DeletePageView.as_view(), name = "delete"),
+    path("update/<int:pk>/update", UpdatePageView.as_view(), name = "update"),
 ]

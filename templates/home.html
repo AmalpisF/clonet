@@ -9,6 +9,7 @@
     <h1>BLACK BLOCK</h1>
     {% for objects in post_list %}
         
+        
         <a href = "{% url 'detail' objects.pk %}"> {{objects.pk}}.  {{objects.titulo}} </a>
         
         <br>
