@@ -13,7 +13,6 @@ class DetailPageView(DetailView):
     model = Post
     template_name = "detail.html"
     success_url =  reverse_lazy("home")
-
 class CreatePageView(CreateView):
     model = Post
     template_name = "create.html"
